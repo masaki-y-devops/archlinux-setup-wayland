@@ -95,6 +95,7 @@ else
 	else
 		echo "FAILED: Downloading bootstrap" >&2
 		read -rp "Press enter to exit."
+		exit 1
 	fi
 fi
 
