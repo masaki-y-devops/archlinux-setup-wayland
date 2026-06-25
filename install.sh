@@ -137,7 +137,7 @@ Server = ${SUBSRV}/\$repo/os/\$arch
 MIRRORLIST
 
 ## pacmanの並列ダウンロードを有効化
-sudo sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 5/g' ${TMP}/root.x86_64/etc/pacman.conf
+sudo sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 5/' ${TMP}/root.x86_64/etc/pacman.conf
 
 ## システムファイルのマウント
 echo "Mounting tmp environment..."
