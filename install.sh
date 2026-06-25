@@ -240,7 +240,7 @@ cat <<-INITSETUP | sudo chroot /mnt
 	
 	## ブートローダ(EFIstub)をセットアップ
 	## バックライト問題修正のため、Intel Atom Z8750デバイス(GPD WIN1,Pocket1)などの場合、
-	## カーネルパラメータおよびカーネルモジュールを追加してinitramfsを再ビルド
+	## カーネルパラメータおよびカーネルモジュールを追加してinitramfsを再生成
 	if [ $(lscpu | grep "Model name" | grep -o "Z8750") = "Z8750" ]; then
 		efibootmgr \
 		-c -g -d /dev/${DISK} \
@@ -279,7 +279,7 @@ cat <<-INITSETUP | sudo chroot /mnt
 	## サーバーは任意
 	## Google:		8.8.8.8, 8.8.4.4
 	## Cloudflare:	1.1.1.1, 1.0.0.1
-	## AdGuard:		94.140.14.14, 94.140.14.14
+	## AdGuard:		94.140.14.14, 94.140.15.15
 	cat <<-RESOLVCONF > /etc/resolv.conf
 		nameserver 94.140.14.14
 		nameserver 94.140.15.15
