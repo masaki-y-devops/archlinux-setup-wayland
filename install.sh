@@ -221,7 +221,7 @@ Server = ${SUBSRV}/\$repo/os/\$arch
 MIRRORLIST
 
 ## 新環境のpacman並列ダウンロード設定
-sudo sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 5/g' /mnt/etc/pacman.conf
+sudo sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 5/' /mnt/etc/pacman.conf
 
 ## 新環境にchrootして必要な設定を行う
 cat <<-INITSETUP | sudo chroot /mnt
