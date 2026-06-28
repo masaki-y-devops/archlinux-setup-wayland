@@ -6,6 +6,22 @@ Xorg(i3wm)での構築はこちら→[arch-setup-xorg](https://github.com/masaki
 
 ## 使用例
 
+ライブ環境（Linux Mintを推奨）をUSBブートで起動し、インターネット接続をしたうえで、
+
+以下のコマンドのどれかを実行してください。（三番目のものはgitのインストールが必要です）
+
+~~~bash
+
+curl -fsSL https://github.com/masaki-y-devops/archlinux-setup-wayland/raw/refs/heads/main/install.sh | bash
+
+~~~
+
+~~~bash
+
+bash <(curl -fsSL https://github.com/masaki-y-devops/archlinux-setup-wayland/raw/refs/heads/main/install.sh)
+
+~~~
+
 ~~~bash
 
 git clone https://github.com/masaki-y-devops/archlinux-setup-wayland
